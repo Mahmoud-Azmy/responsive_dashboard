@@ -12,49 +12,50 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 18, right: 18, top: 26),
-      child: Container(
-          color: Colors.white,
-          child: const CustomScrollView(
-            slivers: [
-              SliverToBoxAdapter(
-                child: UserInfoListTile(
-                  image: Assets.assetsImagesUser3,
-                  title: 'Lekan Okeowo',
-                  subtitle: 'demo@gmail.com',
-                ),
+    return Container(
+        color: Colors.white,
+        child: const CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+              child: SizedBox(
+                height: 26,
               ),
-              SliverToBoxAdapter(),
-              DrawerItemListView(),
-              SliverFillRemaining(
-                hasScrollBody: false,
-                child: Column(
-                  children: [
-                    Expanded(
-                      child: SizedBox(
-                        height: 20,
-                      ),
-                    ),
-                    InActiveDrawerItem(
-                        drawerItemModel: DrawerItemModel(
-                            Assets.assetsImagesSettings, 'Setting system'),
-                        isActive: false),
-                    SizedBox(
+            ),
+            SliverToBoxAdapter(
+              child: UserInfoListTile(
+                image: Assets.assetsImagesUser3,
+                title: 'Lekan Okeowo',
+                subtitle: 'demo@gmail.com',
+              ),
+            ),
+            DrawerItemListView(),
+            SliverFillRemaining(
+              hasScrollBody: false,
+              child: Column(
+                children: [
+                  Expanded(
+                    child: SizedBox(
                       height: 20,
                     ),
-                    InActiveDrawerItem(
-                        drawerItemModel: DrawerItemModel(
-                            Assets.assetsImagesLogout, 'Logout account'),
-                        isActive: false),
-                    SizedBox(
-                      height: 20,
-                    ),
-                  ],
-                ),
-              )
-            ],
-          )),
-    );
+                  ),
+                  InActiveDrawerItem(
+                      drawerItemModel: DrawerItemModel(
+                          Assets.assetsImagesSettings, 'Setting system'),
+                      isActive: false),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  InActiveDrawerItem(
+                      drawerItemModel: DrawerItemModel(
+                          Assets.assetsImagesLogout, 'Logout account'),
+                      isActive: false),
+                  SizedBox(
+                    height: 20,
+                  ),
+                ],
+              ),
+            )
+          ],
+        ));
   }
 }
