@@ -18,7 +18,9 @@ class TimeOptions extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
         ),
       ),
-      padding: const EdgeInsets.symmetric(horizontal: 8),
+      padding: const EdgeInsets.only(
+        left: 8,
+      ),
       child: Row(
         children: [
           const Text(
