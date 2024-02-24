@@ -22,11 +22,15 @@ class LatestTransactionListView extends StatelessWidget {
         name: 'Josua Nunito',
         mail: 'Madraniadi20@gmail',
         image: Assets.assetsImagesUser2),
+    UserInfoModel(
+        name: 'Madrani Andi',
+        mail: 'Madraniadi20@gmail',
+        image: Assets.assetsImagesUser1),
   ];
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 72,
+      height: 75,
       child: ListView.builder(
         itemCount: items.length,
         scrollDirection: Axis.horizontal,

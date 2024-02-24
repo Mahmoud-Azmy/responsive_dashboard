@@ -23,6 +23,9 @@ class DashBoardDesktopLayout extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
+                SizedBox(
+                  height: 24,
+                ),
                 AllExpenses(),
                 SizedBox(
                   height: 24,
