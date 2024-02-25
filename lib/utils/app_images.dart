@@ -1,14 +1,13 @@
 class Assets {
   Assets._();
+  
+  /// Assets for assetsImagesBackgrounCard
+  /// assets/images/backgroun_card.png
+  static const String assetsImagesBackgrounCard = "assets/images/backgroun_card.png";
 
   /// Assets for assetsImagesBalance
   /// assets/images/balance.svg
   static const String assetsImagesBalance = "assets/images/balance.svg";
-
-  /// Assets for assetsImagesCardBackgroun
-  /// assets/images/card_backgroun.svg
-  static const String assetsImagesCardBackgroun =
-      "assets/images/card_backgroun.svg";
 
   /// Assets for assetsImagesDashboard
   /// assets/images/dashboard.svg
@@ -36,13 +35,11 @@ class Assets {
 
   /// Assets for assetsImagesMyInvestments
   /// assets/images/my_investments.svg
-  static const String assetsImagesMyInvestments =
-      "assets/images/my_investments.svg";
+  static const String assetsImagesMyInvestments = "assets/images/my_investments.svg";
 
   /// Assets for assetsImagesMyTransaction
   /// assets/images/my_transaction.svg
-  static const String assetsImagesMyTransaction =
-      "assets/images/my_transaction.svg";
+  static const String assetsImagesMyTransaction = "assets/images/my_transaction.svg";
 
   /// Assets for assetsImagesSettings
   /// assets/images/settings.svg
@@ -66,6 +63,6 @@ class Assets {
 
   /// Assets for assetsImagesWalletAccount
   /// assets/images/wallet_account.svg
-  static const String assetsImagesWalletAccount =
-      "assets/images/wallet_account.svg";
+  static const String assetsImagesWalletAccount = "assets/images/wallet_account.svg";
 }
+
