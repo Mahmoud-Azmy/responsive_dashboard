@@ -15,7 +15,7 @@ class LatestTransaction extends StatelessWidget {
           style: AppStyles.styleMedium16,
         ),
         SizedBox(
-          height: 12,
+          height: 8,
         ),
         LatestTransactionListView()
       ],

@@ -20,12 +20,9 @@ class QuickInvoiceHeader extends StatelessWidget {
             shape: OvalBorder(),
             color: Color(0xffFAFAFA),
           ),
-          child: IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.add,
-              color: Color(0xff4EB7F2),
-            ),
+          child: const Icon(
+            Icons.add,
+            color: Color(0xff4EB7F2),
           ),
         ),
       ],

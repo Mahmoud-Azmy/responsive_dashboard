@@ -25,7 +25,7 @@ class QuickInvoice extends StatelessWidget {
         ),
         QuickInvoiceForm(),
         SizedBox(
-          height: 24,
+          height: 14,
         ),
         QuickInvoiceButtonsSection()
       ],

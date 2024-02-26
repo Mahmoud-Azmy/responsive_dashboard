@@ -28,13 +28,10 @@ class AllExpensesItemHeader extends StatelessWidget {
           ),
         ),
         const Spacer(),
-        IconButton(
-            padding: EdgeInsets.zero,
-            onPressed: () {},
-            icon: Icon(
-              Icons.arrow_forward_ios_outlined,
-              color: iconColor ?? const Color(0xff064061),
-            ))
+        Icon(
+          Icons.arrow_forward_ios_outlined,
+          color: iconColor ?? const Color(0xff064061),
+        )
       ],
     );
   }

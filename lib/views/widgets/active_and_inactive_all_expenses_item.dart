@@ -27,21 +27,21 @@ class InActiveAllExpensesItem extends StatelessWidget {
             image: allExpensesItemModel.image,
           ),
           const SizedBox(
-            height: 30,
+            height: 15,
           ),
           Text(
             allExpensesItemModel.title,
             style: AppStyles.styleSemiBold16,
           ),
           const SizedBox(
-            height: 8,
+            height: 4,
           ),
           Text(
             allExpensesItemModel.date,
             style: AppStyles.styleRegular14,
           ),
           const SizedBox(
-            height: 16,
+            height: 8,
           ),
           Text(
             allExpensesItemModel.price,
@@ -75,7 +75,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
             backgrounColor: const Color(0xff60BEF3),
           ),
           const SizedBox(
-            height: 30,
+            height: 15,
           ),
           Text(
             allExpensesItemModel.title,
@@ -84,7 +84,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 8,
+            height: 4,
           ),
           Text(
             allExpensesItemModel.date,
@@ -92,7 +92,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
                 .copyWith(color: const Color(0xffFAFAFA)),
           ),
           const SizedBox(
-            height: 16,
+            height: 8,
           ),
           Text(
             allExpensesItemModel.price,
