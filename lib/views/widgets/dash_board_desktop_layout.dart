@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:responsive_dash_board/views/widgets/all_expenses.dart';
 import 'package:responsive_dash_board/views/widgets/custom_drawer.dart';
+import 'package:responsive_dash_board/views/widgets/income_section.dart';
 import 'package:responsive_dash_board/views/widgets/my_card_transaction_history_section.dart';
 import 'package:responsive_dash_board/views/widgets/quick_invoice.dart';
 
@@ -13,14 +14,14 @@ class DashBoardDesktopLayout extends StatelessWidget {
     return const Row(
       children: [
         Expanded(
-          flex: 293,
+          flex: 2,
           child: CustomDrawer(),
         ),
         SizedBox(
           width: 16,
         ),
         Expanded(
-          flex: 604,
+          flex: 5,
           child: SingleChildScrollView(
             child: Column(
               children: [
@@ -43,8 +44,16 @@ class DashBoardDesktopLayout extends StatelessWidget {
           width: 16,
         ),
         Expanded(
-          flex: 468,
-          child: MyCardTransactionHistorySection(),
+          flex: 3,
+          child: Column(
+            children: [
+              MyCardTransactionHistorySection(),
+              SizedBox(
+                height: 16,
+              ),
+              Expanded(child: IncomeSection()),
+            ],
+          ),
         ),
         SizedBox(
           width: 16,

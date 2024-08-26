@@ -12,7 +12,7 @@ class MyCard extends StatelessWidget {
       aspectRatio: 420 / 215,
       child: Container(
         padding:
-            const EdgeInsets.only(top: 10, bottom: 24, left: 16, right: 20),
+            const EdgeInsets.only(top: 10, bottom: 20, left: 16, right: 20),
         decoration: BoxDecoration(
           image: const DecorationImage(
             fit: BoxFit.fill,
@@ -47,9 +47,6 @@ class MyCard extends StatelessWidget {
               '0918 8124 0042 8129',
               style: AppStyles.styleSemiBold24
                   .copyWith(color: const Color(0xffffffff)),
-            ),
-            const SizedBox(
-              height: 14,
             ),
             Text(
               '12/20-124',
