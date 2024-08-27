@@ -10,15 +10,9 @@ class DashboardTabletLayout extends StatelessWidget {
     return const Row(
       children: [
         Expanded(child: CustomDrawer()),
-        SizedBox(
-          width: 20,
-        ),
         Expanded(
-          flex: 2,
+          flex: 3,
           child: DashBoardMobilLayout(),
-        ),
-        SizedBox(
-          width: 20,
         ),
       ],
     );
