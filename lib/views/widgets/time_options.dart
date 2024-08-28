@@ -23,9 +23,9 @@ class TimeOptions extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const Text(
+          Text(
             'Monthly',
-            style: AppStyles.styleMedium16,
+            style: AppStyles.styleMedium16(context),
           ),
           IconButton(
               onPressed: () {},

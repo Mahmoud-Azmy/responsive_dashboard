@@ -11,8 +11,8 @@ class CustomTextField extends StatelessWidget {
       child: TextField(
         decoration: InputDecoration(
           hintText: hintText,
-          hintStyle:
-              AppStyles.styleRegular16.copyWith(color: const Color(0xffAAAAAA)),
+          hintStyle: AppStyles.styleRegular16(context)
+              .copyWith(color: const Color(0xffAAAAAA)),
           fillColor: const Color(0xffF1F1F1),
           filled: true,
           border: buildBorder(),

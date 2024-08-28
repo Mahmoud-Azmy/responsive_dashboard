@@ -20,12 +20,12 @@ class IncomeDetailsItem extends StatelessWidget {
       title: Text(
         maxLines: 1,
         incomeDetailsItemModel.title,
-        style: AppStyles.styleRegular16,
+        style: AppStyles.styleRegular16(context),
       ),
       trailing: Text(
         maxLines: 1,
         incomeDetailsItemModel.value,
-        style: AppStyles.styleMedium16,
+        style: AppStyles.styleMedium16(context),
       ),
     );
   }
